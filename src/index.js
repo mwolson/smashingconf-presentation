@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Presentation from './presentation';
+import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const webpackRequireContext = require.context(
+  '!raw-loader!../public/code',
+  false,
+  /.+/,
+)
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// Convert to Map
+const files = webpackRequireContext.keys().reduce((map, fileName) => {
+  const content = webpackRequireContext(fileName)
+  // remove the leading './'
+  if (fileName.startsWith('./')){
+    fileName = fileName.substr(2)
+  }
+
+  return map.set(fileName, content);
+}, new Map())
+
+ReactDOM.render(<Presentation files={files} />, document.getElementById('root'));
+registerServiceWorker();
