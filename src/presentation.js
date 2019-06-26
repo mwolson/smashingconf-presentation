@@ -110,19 +110,71 @@ export default class Presentation extends Component {
               When exporting, also export a manually-created background rectangle which has the
               entire space of the area/viewbox that the animation is meant to be placed in.
             </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+        <TextSlide>
+          <CenteredPlainList>
             <ListItem>Prefer classes instead of IDs</ListItem>
             <ListItem>IDs are useful for cloning an element with {'<use>'} however</ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+
+        <SectionSlide>
+          <Heading>Service Workers</Heading>
+        </SectionSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>
+              Very dangerous because the worker can go unresponsive if it's not coded well
+            </ListItem>
+            <ListItem>
+              Pretty much requires TDD practices to mitigate this risk
+            </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>
+              Benefit: Might be useful to have network handling and JSON parsing be on a service worker,
+              so that we don't block the UI thread
+            </ListItem>
+            <ListItem>
+              Caveat: Service workers are often used for caching, but showing stale data to the users
+              can be a terrible product experience unless done thoughtfully.
+            </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>
+              Idea: If there is something that we must fetch when we get something that triggers a push
+              notification on Desktop, go ahead and fetch it at the time we show the user the
+              notification
+            </ListItem>
+            <ListItem>
+              Caveat: We don't have much data like this - we usually surface enough info with the SSE
+              event itself
+            </ListItem>
           </CenteredPlainList>
         </TextSlide>
 
         <TitleSlide>
           <Heading>Questions?</Heading>
           <CenteredPlainList>
-            <LinkAndText
-              href={'https://docs.google.com/document/d/1M37JEJWaj-ShScJNi5v7Mf-Mvl1T9SIbimxRQHGioYA/edit#heading=h.oq9dlh6pjuml'}
-              text={'Day 1 shared notes'}
-              textColor={'secondary'}
-            />
+            <ListItem>
+              <LinkAndText
+                href={'https://docs.google.com/document/d/1M37JEJWaj-ShScJNi5v7Mf-Mvl1T9SIbimxRQHGioYA/edit#heading=h.oq9dlh6pjuml'}
+                text={'Day 1 shared notes'}
+                textColor={'secondary'}
+              />
+            </ListItem>
+            <ListItem>
+              <LinkAndText
+                href={'https://docs.google.com/document/d/125nM6oOsZEq-RR6RSBAGDG5Z0zkjPqH3zzud0ThLoiw/edit#'}
+                text={'Day 2 shared notes'}
+                textColor={'secondary'}
+              />
+            </ListItem>
           </CenteredPlainList>
         </TitleSlide>
       </ThemedDeck>
