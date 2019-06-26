@@ -1,13 +1,13 @@
 {
-  "main.js": "/smashingconf-presentation/static/js/main.3d5b5648.chunk.js",
-  "main.js.map": "/smashingconf-presentation/static/js/main.3d5b5648.chunk.js.map",
+  "main.js": "/smashingconf-presentation/static/js/main.5aca0736.chunk.js",
+  "main.js.map": "/smashingconf-presentation/static/js/main.5aca0736.chunk.js.map",
   "static/css/1.bc7b23df.chunk.css": "/smashingconf-presentation/static/css/1.bc7b23df.chunk.css",
-  "static/js/1.ac56d629.chunk.js": "/smashingconf-presentation/static/js/1.ac56d629.chunk.js",
-  "static/js/1.ac56d629.chunk.js.map": "/smashingconf-presentation/static/js/1.ac56d629.chunk.js.map",
+  "static/js/1.d047e8e6.chunk.js": "/smashingconf-presentation/static/js/1.d047e8e6.chunk.js",
+  "static/js/1.d047e8e6.chunk.js.map": "/smashingconf-presentation/static/js/1.d047e8e6.chunk.js.map",
   "runtime~main.js": "/smashingconf-presentation/static/js/runtime~main.ab7f1b33.js",
   "runtime~main.js.map": "/smashingconf-presentation/static/js/runtime~main.ab7f1b33.js.map",
   "static/css/1.bc7b23df.chunk.css.map": "/smashingconf-presentation/static/css/1.bc7b23df.chunk.css.map",
   "index.html": "/smashingconf-presentation/index.html",
-  "precache-manifest.153f91ea5522d8f11e984c15c478444e.js": "/smashingconf-presentation/precache-manifest.153f91ea5522d8f11e984c15c478444e.js",
+  "precache-manifest.9e1d285b3da7110fa280a83d63dad0ec.js": "/smashingconf-presentation/precache-manifest.9e1d285b3da7110fa280a83d63dad0ec.js",
   "service-worker.js": "/smashingconf-presentation/service-worker.js"
 }
