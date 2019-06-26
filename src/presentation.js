@@ -43,6 +43,12 @@ export default class Presentation extends Component {
         <TitleSlide>
           <Heading>SmashingConf 2019</Heading>
           <Text>Key Takeaways</Text>
+          <br />
+          <br />
+          <LinkAndText
+            href={'https://github.com/mwolson/smashingconf-presentation'}
+            textColor={'secondary'}
+          />
         </TitleSlide>
 
         <SectionSlide>
