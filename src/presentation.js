@@ -74,7 +74,6 @@ export default class Presentation extends Component {
         <TextSlide>
           <CenteredPlainList>
             <ListItem>Emmet templates allow writing nested HTML quickly</ListItem>
-            <ListItem>CSS grid generators are helpful for irregular-looking responsive layouts</ListItem>
             <ListItem>Greensock Animation (GSAP module) for animations</ListItem>
             <ListItem>Probably a good idea for everyone to spend quality time learning snippets</ListItem>
           </CenteredPlainList>
@@ -152,8 +151,58 @@ export default class Presentation extends Component {
               notification
             </ListItem>
             <ListItem>
-              Caveat: We don't have much data like this - we usually surface enough info with the SSE
-              event itself
+              Caveat: If you can surface enough data with the event that triggers a push notification,
+              then you might not need to fetch anything, which is an even better user experience.
+            </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+
+        <SectionSlide>
+          <Heading>CSS `display: grid`</Heading>
+        </SectionSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>
+              Allows HTML to be flattened somewhat - you can just tell a div to position itself within
+              a grid
+            </ListItem>
+            <ListItem>
+              Unlike Flex, you can have overlapping elements
+            </ListItem>
+            <ListItem>CSS grid generators are helpful for irregular-looking responsive layouts</ListItem>
+            <ListItem>
+              <LinkAndText
+                href={'https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/'}
+                text={'IE 11 status: Uses older version of the grid standard'}
+              />
+            </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+
+        <SectionSlide>
+          <Heading>Spicing up websites</Heading>
+        </SectionSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>
+              Can be easier to play with page layout in something like Photoshop.
+            </ListItem>
+            <ListItem>
+              <LinkAndText
+                href={'https://alternativeto.net/software/weblayers/'}
+                text={'Tools which can export the layers of a webpage to PSD format'}
+              />
+            </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>
+              Tricks to lead user down the page:
+            </ListItem>
+            <ListItem>
+              Angles, overlapping images, share background color between components
+              (use sparingly), use shadows instead of hard boxes
             </ListItem>
           </CenteredPlainList>
         </TextSlide>
