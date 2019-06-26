@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
-import { Link, Text } from 'spectacle'
+import { Link, Text as UpstreamText } from 'spectacle'
+import styled from '@emotion/styled'
+
+const Text = styled(UpstreamText)`
+  text-decoration: underline;
+`
 
 class LinkAndText extends Component {
   render() {
