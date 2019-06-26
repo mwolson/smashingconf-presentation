@@ -3,9 +3,9 @@ import createTheme from 'spectacle/lib/themes/default';
 const theme = createTheme(
   {
     primary: 'white',
-    secondary: '#1F2022',
-    tertiary: '#769eab',
-    quartenary: '##c1c1c1',
+    secondary: '#0168b8',
+    tertiary: '#1F2022',
+    quartenary: '#e53b2c',
   },
   {
     primary: 'Montserrat',
