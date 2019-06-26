@@ -213,6 +213,93 @@ export default class Presentation extends Component {
           </CenteredPlainList>
         </TextSlide>
 
+        <SectionSlide>
+          <Heading>Dark Mode-ing a Website</Heading>
+        </SectionSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>
+              Best way is probably CSS Variables, though for prototyping React props can work.
+            </ListItem>
+            <ListItem>
+              <LinkAndText
+                href={'https://stackoverflow.com/questions/46429937/ie11-does-a-polyfill-script-exist-for-css-variables'}
+                text={'There\'s an IE11 "ponyfill"'}
+              />
+            </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>
+              Be aware of your darkest and lightest colors, since it changes which colors work together
+              well; in general avoid 100% black and 100% white
+            </ListItem>
+            <ListItem>
+              <LinkAndText
+                href={'https://github.com/pburkeland/colorvisor/'}
+                text={'ColorVisor tool for chart with advice on adjacent colors'}
+              />
+            </ListItem>
+            <ListItem>
+              <LinkAndText
+                href={'https://colorable.jxnblk.com/'}
+                text={'Color contrast tool for background + foreground'}
+              />
+            </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+
+        <SectionSlide>
+          <Heading>Website Performance</Heading>
+        </SectionSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>Tools:</ListItem>
+            <ListItem>
+              <LinkAndText
+                href={'https://developers.google.com/speed/pagespeed/insights/'}
+                text={'Latest Google performance suggestion website'}
+              />
+            </ListItem>
+            <ListItem>
+              <LinkAndText
+                href={'https://speedcurve.com/'}
+                text={'SpeedCurve, for performance budgets'}
+              />
+            </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>
+              Avoid flash of unstyled content
+            </ListItem>
+            <ListItem>
+              Avoid preloaded but "unclickable" content; for TigerConnect: this happens on our existing
+              login page, we should fix it (next slide)
+            </ListItem>
+            <ListItem>
+              There's a "swap" CSS keyword which can automatically switch to a webfont when it
+              finishes loading
+            </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>
+              Split JS into first experience content and later experience content
+            </ListItem>
+            <ListItem>
+              Same for CSS
+            </ListItem>
+            <ListItem>
+              For TigerConnect: Let's create a separate lightweight login page bundle that preloads
+              the rest of the Messenger JS and CSS
+            </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+
         <TitleSlide>
           <Heading>Questions?</Heading>
           <CenteredPlainList>
