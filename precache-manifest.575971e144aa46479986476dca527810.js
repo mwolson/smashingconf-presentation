@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/smashingconf-presentation/static/js/runtime~main.ab7f1b33.js"
   },
   {
-    "revision": "88bb06da4c8a5e063e3c",
-    "url": "/smashingconf-presentation/static/js/main.88bb06da.chunk.js"
+    "revision": "2395fa5a2a9546727b35",
+    "url": "/smashingconf-presentation/static/js/main.2395fa5a.chunk.js"
   },
   {
     "revision": "ac56d6299aebf817e43a",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/smashingconf-presentation/static/css/1.bc7b23df.chunk.css"
   },
   {
-    "revision": "32eb7c9745b0fa900b8c22d0720a269e",
+    "revision": "38b89aeaaeec94687488322007cbfd32",
     "url": "/smashingconf-presentation/index.html"
   }
 ];
