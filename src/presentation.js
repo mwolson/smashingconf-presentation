@@ -249,6 +249,24 @@ export default class Presentation extends Component {
             </ListItem>
           </CenteredPlainList>
         </TextSlide>
+        <TextSlide>
+          <CenteredPlainList>
+            <ListItem>
+              <LinkAndText
+                href={'https://wgtwo.com/blog/hacking-dark-themes-with-css-blend-modes/'}
+                text={'Interesting idea on automatically picking dark mode colors'}
+              />
+            </ListItem>
+            <ListItem>
+              Caveat: Using blend CSS properties like they do is not performant
+            </ListItem>
+            <ListItem>
+              But if we instead math out the transforms and just have the new dark mode colors be
+              checked-in static values, could be a very useful starting point
+            </ListItem>
+          </CenteredPlainList>
+        </TextSlide>
+
 
         <SectionSlide>
           <Heading>Website Performance</Heading>
